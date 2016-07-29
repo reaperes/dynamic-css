@@ -1,0 +1,31 @@
+{
+  "name": "dynamic-css",
+  "version": "0.1.0-alpha2",
+  "description": "dynamic append, remove css",
+  "main": "lib/dynamic-css.min.js",
+  "scripts": {
+    "build": "rimraf lib && node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reaperes/dynamic-css.git"
+  },
+  "keywords": [
+    "dynamic",
+    "css"
+  ],
+  "author": {
+    "name": "reaperes",
+    "email": "reaperes105@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reaperes/dynamic-css/issues"
+  },
+  "homepage": "https://github.com/reaperes/dynamic-css#readme",
+  "devDependencies": {
+    "phantom": "^2.1.13",
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.1"
+  }
+}
