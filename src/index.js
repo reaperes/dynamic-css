@@ -1,5 +1,17 @@
 var _id = 1;
 
+function existsCss(href) {
+  var stylesheets = document.styleSheets;
+  var i;
+
+  for (i=0; i<stylesheets.length; i++) {
+    if (stylesheets[i].href === href) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function appendCss(href) {
   var head  = document.getElementsByTagName('head')[0];
   var link  = document.createElement('link');
@@ -38,6 +50,7 @@ function absolutePath(href) {
 }
 
 module.exports = {
+  existsCss: existsCss,
   appendCss: appendCss,
   removeCss: removeCss
 };

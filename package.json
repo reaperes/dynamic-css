@@ -1,6 +1,6 @@
 {
   "name": "dynamic-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "dynamic append, remove css",
   "main": "lib/dynamic-css.min.js",
   "scripts": {
